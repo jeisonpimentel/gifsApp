@@ -1,0 +1,25 @@
+<!--<ul>
+    <li *ngFor="let item of resultados">
+        {{item.title}}
+    </li>
+</ul>-->
+
+<div class="row">
+    <div *ngFor="let git of resultados" 
+        class="col-md-4 col-sm-6 animate__animate animate__fadeIn animate__slower">
+
+        <div class="card">
+            <img 
+                [src]="git.images.downsized_medium.url" 
+                [alt]="git.title"
+                class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">
+                  <!--  {{git.title}} -->
+                  <!--{{git.images.downsized_medium.url}}-->
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
